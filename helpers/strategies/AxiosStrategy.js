@@ -12,24 +12,15 @@ export const cancelRunningAxiosRequest = () => {
 
 const axiosWithProxy = async(req, { state }) => {
     try {
-        const { data } = await axios.post(
-            "https://cors.bridged.cc/", {
+        const res = await axios(
+            "https://cors.bridged.cc/" + req.url, {
                 ...req,
-                wantsBinary: true,
-            }, {
-                cancelToken: cancelSource.token,
+                cancelToken: (cancelSource && cancelSource.token) || "",
+                responseType: "arraybuffer",
             }
         )
 
-        if (!data.success) {
-            throw new Error(data.data.message || "Proxy Error")
-        }
-
-        if (data.isBinary) {
-            data.data = decodeB64StringToArrayBuffer(data.data)
-        }
-
-        return data
+        return res
     } catch (e) {
         // Check if the throw is due to a cancellation
         if (axios.isCancel(e)) {
@@ -59,10 +50,7 @@ const axiosWithoutProxy = async(req, _store) => {
 }
 
 const axiosStrategy = (req, store) => {
-    if (store.state.postwoman.settings.PROXY_ENABLED) {
-        return axiosWithProxy(req, store)
-    }
-    return axiosWithoutProxy(req, store)
+    return axiosWithProxy(req, store)
 }
 
 export const testables = {
