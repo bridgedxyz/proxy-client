@@ -7,7 +7,7 @@
           <h1 class="show-on-small-screen logo">Br</h1>
         </nuxt-link>
         <iframe
-          src="https://ghbtns.com/github-btn.html?user=bridgedxyz&repo=proxy-client&type=star&count=true"
+          src="https://ghbtns.com/github-btn.html?user=bridgedxyz&repo=services&type=star&count=true"
           frameborder="0"
           scrolling="0"
           width="150"
@@ -27,7 +27,7 @@
           <i class="material-icons">offline_bolt</i>
         </button>
         <a
-          href="https://github.com/hoppscotch/hoppscotch"
+          href="https://github.com/bridgedxyz/services"
           target="_blank"
           aria-label="GitHub"
           rel="noopener"
