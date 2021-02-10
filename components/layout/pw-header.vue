@@ -3,7 +3,7 @@
     <div class="row-wrapper">
       <span class="slide-in">
         <nuxt-link :to="localePath('index')">
-          <h1 class="hide-on-small-screen logo">cors.bridged.xyz</h1>
+          <h1 class="hide-on-small-screen logo">cors.bridged.cc</h1>
           <h1 class="show-on-small-screen logo">Br</h1>
         </nuxt-link>
         <iframe
@@ -49,13 +49,13 @@
               <i class="material-icons">keyboard</i>
               <span>{{ $t("shortcuts") }}</span>
             </button>
-            <button class="icon" @click="showSupport = true" v-close-popover>
-              <i class="material-icons">favorite</i>
-              <span>{{ $t("support_us") }}</span>
+            <button class="icon">
+              <i class="material-icons">language</i>
+              <span>Bridged.xyz</span>
             </button>
             <button
               class="icon"
-              onClick="window.open('https://twitter.com/share?text=👽 Hoppscotch • A free, fast and beautiful API request builder - Helps you create requests faster, saving precious time on development.&url=https://hoppscotch.io&hashtags=hoppscotch&via=liyasthomas');"
+              onClick="window.open('https://twitter.com/bridgedxyz');"
               v-close-popover
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
@@ -81,7 +81,6 @@
     </div>
     <extensions :show="showExtensions" @hide-modal="showExtensions = false" />
     <shortcuts :show="showShortcuts" @hide-modal="showShortcuts = false" />
-    <support :show="showSupport" @hide-modal="showSupport = false" />
   </header>
 </template>
 
