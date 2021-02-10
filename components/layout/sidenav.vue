@@ -11,7 +11,26 @@
         v-tooltip.right="$t('home')"
         :aria-label="$t('home')"
       >
-        <logo alt class="material-icons" style="height: 24px"></logo>
+        <svg
+          width="21"
+          height="21"
+          viewBox="0 0 21 21"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M13.8293 6.93437L13.7899 14.1445L20.7637 20.9606V13.7505L20.7626 13.7494C20.699 9.97472 17.6192 6.93435 13.8293 6.93433C13.8293 6.93433 13.8293 6.93433 13.8293 6.93433L13.8293 6.93437Z"
+            fill="black"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M13.01 3.58933C9.54739 3.97687 6.85553 6.91422 6.85553 10.4803V13.7899L6.97373 21L0 14.1839V6.93433V6.89493L0.000108968 6.89504C0.0212562 3.0834 3.11771 0 6.93433 0C9.55113 0 11.8294 1.44947 13.01 3.58933Z"
+            fill="black"
+          />
+        </svg>
       </nuxt-link>
       <nuxt-link
         :to="localePath('realtime')"
@@ -218,7 +237,7 @@ nav.primary-nav {
     }
 
     &.nuxt-link-exact-active {
-      @apply bg-acColor;
+      background-color: #fff;
       @apply text-actColor;
       @apply fill-current;
 
