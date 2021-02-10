@@ -6,7 +6,7 @@
           Powered by Hoppscotch
         </a>
         <span class="footer-link">CORS middleware served by Bridged</span>
-        <span class="footer-link">Middleware Library CORS anywhere</span>
+        <a class="footer-link" href="https://github.com/Rob--W/cors-anywhere/" target="_blank" rel="noopener">Middleware Library CORS anywhere</a>
       </span>
     </div>
   </footer>

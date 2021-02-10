@@ -3,7 +3,7 @@
     <div class="row-wrapper">
       <span class="slide-in">
         <nuxt-link :to="localePath('index')">
-          <h1 class="hide-on-small-screen logo">cors.bridged.xyz</h1>
+          <h1 class="hide-on-small-screen logo">cors.bridged.cc</h1>
           <h1 class="show-on-small-screen logo">Br</h1>
         </nuxt-link>
         <iframe
