@@ -22,8 +22,10 @@
           }"
           @click.native="ZEN_MODE = !ZEN_MODE"
         />
+        <!-- X-OVERRIDE -->
         <tippy
           ref="interceptorOptions"
+          class="x-override-disable"
           interactive
           trigger="click"
           theme="popover"

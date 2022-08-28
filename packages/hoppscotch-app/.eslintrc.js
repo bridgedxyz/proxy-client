@@ -31,6 +31,8 @@ module.exports = {
     "import/no-named-as-default-member": "off",
     "import/default": "off",
     "no-undef": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "off",
     // localStorage block
     "no-restricted-globals": [
       "error",

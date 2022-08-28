@@ -40,27 +40,28 @@ const primaryNavigation = [
   {
     target: "index",
     svg: "link-2",
-    title: t("navigation.rest"),
+    title: "Test", // t("navigation.rest"),
     exact: true,
   },
-  {
-    target: "graphql",
-    svg: "graphql",
-    title: t("navigation.graphql"),
-    exact: false,
-  },
-  {
-    target: "realtime",
-    svg: "globe",
-    title: t("navigation.realtime"),
-    exact: false,
-  },
-  {
-    target: "documentation",
-    svg: "book-open",
-    title: t("navigation.doc"),
-    exact: false,
-  },
+  // {
+  //   target: "graphql",
+  //   svg: "graphql",
+  //   title: t("navigation.graphql"),
+  //   exact: false,
+  // },
+  // {
+  //   target: "realtime",
+  //   svg: "globe",
+  //   title: t("navigation.realtime"),
+  //   exact: false,
+  // },
+  // X-OVERRIDE
+  // {
+  //   target: "documentation",
+  //   svg: "book-open",
+  //   title: t("navigation.doc"),
+  //   exact: false,
+  // },
   {
     target: "settings",
     svg: "settings",

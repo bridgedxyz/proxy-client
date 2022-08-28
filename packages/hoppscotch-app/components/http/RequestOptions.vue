@@ -24,7 +24,7 @@
     <SmartTab :id="'authorization'" :label="`${$t('tab.authorization')}`">
       <HttpAuthorization />
     </SmartTab>
-    <SmartTab
+    <!-- <SmartTab
       :id="'preRequestScript'"
       :label="`${$t('tab.pre_request_script')}`"
       :indicator="
@@ -32,14 +32,14 @@
       "
     >
       <HttpPreRequestScript />
-    </SmartTab>
-    <SmartTab
+    </SmartTab> -->
+    <!-- <SmartTab
       :id="'tests'"
       :label="`${$t('tab.tests')}`"
       :indicator="testScript && testScript.length > 0 ? true : false"
     >
       <HttpTests />
-    </SmartTab>
+    </SmartTab> -->
   </SmartTabs>
 </template>
 
@@ -86,7 +86,7 @@ const newActiveHeadersCount$ = useReadonlyStream(
   null
 )
 
-const preRequestScript = usePreRequestScript()
+// const preRequestScript = usePreRequestScript()
 
-const testScript = useTestScript()
+// const testScript = useTestScript()
 </script>

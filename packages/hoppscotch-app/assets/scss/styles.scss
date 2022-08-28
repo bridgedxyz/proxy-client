@@ -1,3 +1,8 @@
+.x-override-disable {
+  pointer-events: none;
+  display: none;
+}
+
 * {
   @apply backface-hidden;
   @apply before:backface-hidden;

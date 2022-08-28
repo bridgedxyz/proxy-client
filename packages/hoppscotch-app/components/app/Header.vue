@@ -6,7 +6,7 @@
       <div class="inline-flex items-center space-x-2">
         <ButtonSecondary
           class="tracking-wide !font-bold !text-secondaryDark hover:bg-primaryDark focus-visible:bg-primaryDark uppercase"
-          :label="t('app.name')"
+          :label="'cors.sh'"
           to="/"
         />
         <AppGitHubStarButton class="mt-1.5 transition <sm:hidden" />
