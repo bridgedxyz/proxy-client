@@ -1,3 +1,6 @@
+# disable github star button since it can confuse users. in `GitHubStarButton.vue`
+
+```html
 <template>
   <transition name="fade" appear>
     <!-- X-OVERRIDE -->
@@ -18,17 +21,4 @@
     /> -->
   </transition>
 </template>
-
-<script setup lang="ts">
-import GithubButton from "vue-github-button"
-import { useColorMode } from "~/helpers/utils/composables"
-
-const colorMode = useColorMode()
-
-defineProps({
-  size: {
-    type: String,
-    default: undefined,
-  },
-})
-</script>
+```

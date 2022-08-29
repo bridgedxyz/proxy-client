@@ -54,7 +54,8 @@
               <SmartChangeLanguage />
             </div>
           </section>
-          <section>
+          <!-- X-OVERRIDE -->
+          <section class="x-override-disable">
             <h4 class="font-semibold text-secondaryDark">
               {{ t("settings.experiments") }}
             </h4>

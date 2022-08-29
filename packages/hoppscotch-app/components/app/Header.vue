@@ -36,16 +36,19 @@
           class="rounded hover:bg-primaryDark focus-visible:bg-primaryDark"
           @click.native="invokeAction('modals.support.toggle')"
         />
+        <!-- X-OVERRIDE -->
         <ButtonSecondary
           v-if="currentUser === null"
           svg="upload-cloud"
           :label="t('header.save_workspace')"
           filled
-          class="hidden md:flex"
+          class="hidden md:flex x-override-disable"
           @click.native="showLogin = true"
         />
+        <!-- X-OVERRIDE -->
         <ButtonPrimary
           v-if="currentUser === null"
+          class="x-override-disable"
           :label="t('header.login')"
           @click.native="showLogin = true"
         />

@@ -5,12 +5,15 @@ require("dotenv").config()
 
 // Common options
 export const options = {
-  name: "Hoppscotch",
-  shortDescription: "Open source API development ecosystem",
-  description:
-    "Helps you create requests faster, saving precious time on development.",
+  // X-OVERRIDE
+  name: "Playground",
+  // X-OVERRIDE
+  shortDescription: "cors.sh playground",
+  // X-OVERRIDE
+  description: "Test your blocked api here, cors freely.",
+  // X-OVERRIDE
   keywords:
-    "hoppscotch, hopp scotch, hoppscotch online, hoppscotch app, postwoman, postwoman chrome, postwoman online, postwoman for mac, postwoman app, postwoman for windows, postwoman google chrome, postwoman chrome app, get postwoman, postwoman web, postwoman android, postwoman app for chrome, postwoman mobile app, postwoman web app, api, request, testing, tool, rest, websocket, sse, graphql, socketio",
+    "hoppscotch, cors, cors proxy, cors.sh, free cors proxy, cors.bridged, cors bridged, cors.bridged.cc, api, request, testing, tool, rest, websocket, sse, graphql, socketio",
   loading: {
     color: "var(--divider-dark-color)",
     background: "var(--primary-color)",
@@ -20,7 +23,8 @@ export const options = {
     background: "#202124",
   },
   social: {
-    twitter: "@hoppscotch_io",
+    // X-OVERRIDE
+    twitter: "@grida_co",
   },
 }
 
@@ -351,6 +355,7 @@ export default {
   router: {
     linkActiveClass: "active-link",
     linkExactActiveClass: "exact-active-link",
-    base: "/playground/",
+    // X-OVERRIDE
+    base: process.env.BASE_PATH,
   },
 }

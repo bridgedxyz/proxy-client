@@ -38,9 +38,10 @@
           </div>
         </div>
       </div>
+      <!-- X-OVERRIDE -->
       <ButtonSecondary
         :label="t('app.documentation')"
-        to="https://docs.hoppscotch.io/features/response"
+        to="https://cors.sh/docs"
         svg="external-link"
         blank
         outline

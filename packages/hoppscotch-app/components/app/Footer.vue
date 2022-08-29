@@ -51,10 +51,11 @@
           :on-shown="() => tippyActions.focus()"
         >
           <template #trigger>
+            <!-- X-OVERRIDE -->
             <ButtonSecondary
               svg="help-circle"
               class="!rounded-none"
-              :label="`${t('app.help')}`"
+              :label="`Hoppscotch ${t('app.help')}`"
             />
           </template>
           <div
