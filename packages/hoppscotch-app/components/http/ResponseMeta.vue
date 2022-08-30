@@ -74,7 +74,10 @@
         >
           {{ t("helpers.network_fail") }}
         </span>
-        <AppInterceptor class="border rounded border-dividerLight" />
+        <!-- X-OVERRIDE -->
+        <AppInterceptor
+          class="x-override-disable border rounded border-dividerLight"
+        />
       </div>
       <div
         v-if="response.type === 'script_fail'"

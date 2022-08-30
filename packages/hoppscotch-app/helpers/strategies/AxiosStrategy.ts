@@ -133,6 +133,7 @@ const axiosWithoutProxy: NetworkStrategy = (req) =>
       () =>
         axios({
           ...req,
+          url: "https://proxy.cors.sh/" + req.url,
           cancelToken: (cancelSource && cancelSource.token) || "",
           responseType: "arraybuffer",
         }),

@@ -100,7 +100,7 @@
           </section>
         </div>
       </div>
-
+      <!-- X-OVERRIDE -->
       <div class="x-override-disable md:grid md:gap-4 md:grid-cols-3">
         <div class="p-8 md:col-span-1">
           <h3 class="heading">

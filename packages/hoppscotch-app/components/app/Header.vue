@@ -4,10 +4,11 @@
       class="flex items-center justify-between flex-1 px-2 py-2 space-x-2 overflow-x-auto"
     >
       <div class="inline-flex items-center space-x-2">
+        <!-- X-OVERRIDE -->
         <ButtonSecondary
           class="tracking-wide !font-bold !text-secondaryDark hover:bg-primaryDark focus-visible:bg-primaryDark uppercase"
           :label="'cors.sh'"
-          to="/"
+          to="https://cors.sh"
         />
         <AppGitHubStarButton class="mt-1.5 transition <sm:hidden" />
       </div>
