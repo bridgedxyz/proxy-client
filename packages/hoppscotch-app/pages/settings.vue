@@ -100,6 +100,73 @@
           </section>
         </div>
       </div>
+      <div class="md:grid md:gap-4 md:grid-cols-3">
+        <div class="p-8 md:col-span-1">
+          <h3 class="heading">About cors.sh/playground</h3>
+          <p class="my-1 text-secondaryLight">
+            cors.sh is a free, open-source, and community-driven CORS proxy
+            service. Every request from playground will be extended with
+            https://proxy.cors.sh and be proxied to bypass the cors error.
+          </p>
+        </div>
+        <div class="p-8 space-y-8 md:col-span-2">
+          <section>
+            <h4 class="font-semibold text-secondaryDark">To get started.</h4>
+            <div class="my-1 text-secondaryLight">
+              You need your own api key from cors.sh in order to use
+              proxy.cors.sh without limitations outside of this playground. use
+              <a style="color: blue" href="https://cors.sh/get-started"
+                >this link</a
+              >
+              to get started.
+            </div>
+          </section>
+          <!-- X-OVERRIDE -->
+          <section class="x-override-disable">
+            <h4 class="font-semibold text-secondaryDark">
+              {{ t("settings.experiments") }}
+            </h4>
+            <div class="my-1 text-secondaryLight">
+              {{ t("settings.experiments_notice") }}
+              <SmartLink
+                class="link"
+                to="https://github.com/hoppscotch/hoppscotch/issues/new/choose"
+                blank
+              >
+                {{ t("app.contact_us") }} </SmartLink
+              >.
+            </div>
+            <div class="py-4 space-y-4">
+              <div class="flex items-center">
+                <SmartToggle :on="TELEMETRY_ENABLED" @change="showConfirmModal">
+                  {{ t("settings.telemetry") }}
+                </SmartToggle>
+              </div>
+              <div class="flex items-center">
+                <SmartToggle
+                  :on="EXPAND_NAVIGATION"
+                  @change="toggleSetting('EXPAND_NAVIGATION')"
+                >
+                  {{ t("settings.expand_navigation") }}
+                </SmartToggle>
+              </div>
+              <div class="flex items-center">
+                <SmartToggle
+                  :on="SIDEBAR_ON_LEFT"
+                  @change="toggleSetting('SIDEBAR_ON_LEFT')"
+                >
+                  {{ t("settings.sidebar_on_left") }}
+                </SmartToggle>
+              </div>
+              <div class="flex items-center">
+                <SmartToggle :on="ZEN_MODE" @change="toggleSetting('ZEN_MODE')">
+                  {{ t("layout.zen_mode") }}
+                </SmartToggle>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
       <!-- X-OVERRIDE -->
       <div class="x-override-disable md:grid md:gap-4 md:grid-cols-3">
         <div class="p-8 md:col-span-1">

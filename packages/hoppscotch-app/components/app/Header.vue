@@ -10,6 +10,11 @@
           :label="'cors.sh'"
           to="https://cors.sh"
         />
+        <ButtonSecondary
+          class="tracking-wide !font-bold !text-secondaryDark hover:bg-primaryDark focus-visible:bg-primaryDark uppercase"
+          :label="'Get started'"
+          to="https://cors.sh/get-started"
+        />
         <AppGitHubStarButton class="mt-1.5 transition <sm:hidden" />
       </div>
       <div class="inline-flex items-center space-x-2">
@@ -21,20 +26,22 @@
           class="rounded hover:bg-primaryDark focus-visible:bg-primaryDark"
           @click.native="showInstallPrompt()"
         />
+        <!-- X-OVERRIDE -->
         <ButtonSecondary
           v-tippy="{ theme: 'tooltip', allowHTML: true }"
           :title="`${t('app.search')} <xmp>/</xmp>`"
           svg="search"
-          class="rounded hover:bg-primaryDark focus-visible:bg-primaryDark"
+          class="x-override-disable rounded hover:bg-primaryDark focus-visible:bg-primaryDark"
           @click.native="invokeAction('modals.search.toggle')"
         />
+        <!-- X-OVERRIDE -->
         <ButtonSecondary
           v-tippy="{ theme: 'tooltip', allowHTML: true }"
           :title="`${
             mdAndLarger ? t('support.title') : t('app.options')
           } <xmp>?</xmp>`"
           svg="life-buoy"
-          class="rounded hover:bg-primaryDark focus-visible:bg-primaryDark"
+          class="x-override-disable rounded hover:bg-primaryDark focus-visible:bg-primaryDark"
           @click.native="invokeAction('modals.support.toggle')"
         />
         <!-- X-OVERRIDE -->
